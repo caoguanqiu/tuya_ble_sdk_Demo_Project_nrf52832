@@ -1322,7 +1322,7 @@ static void tuya_ble_handle_dp_query_req(uint8_t*recv_data,uint16_t recv_len)
 
     p_buf[0] = 0x00;
 
-    tuya_ble_commData_send(FRM_CMD_RESP,ack_sn,p_buf,1,ENCRYPTION_MODE_SESSION_KEY);
+    tuya_ble_commData_send(FRM_STATE_QUERY_RESP,ack_sn,p_buf,1,ENCRYPTION_MODE_SESSION_KEY);
 
     event.evt = TUYA_BLE_CB_EVT_DP_QUERY;
 
@@ -1726,7 +1726,7 @@ uint8_t tuya_ble_commData_send(uint16_t cmd,uint32_t ack_sn,uint8_t *data,uint16
     air_send_packet.send_data[13+len] = crc16;
     
 
-    TUYA_BLE_LOG_HEXDUMP_DEBUG("ble_commData_send plain data",(u8*)air_send_packet.send_data,air_send_packet.send_len);//
+    TUYA_BLE_LOG_HEXDUMP_DEBUG("ble_commData_send plain data",(uint8_t*)air_send_packet.send_data,air_send_packet.send_len);//
 
     /*
         air_recv_packet.de_encrypt_buf[17] = ble_send_sn>>24;

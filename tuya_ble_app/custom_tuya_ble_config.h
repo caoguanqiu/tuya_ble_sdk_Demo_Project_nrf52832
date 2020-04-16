@@ -109,7 +109,7 @@
 /*
  * if defined ,enable log output
  */
-//#define TUYA_BLE_LOG_ENABLED 
+#define TUYA_BLE_LOG_ENABLED 
 
 #define TUYA_BLE_LOG_COLORS_ENABLE  0
 
@@ -131,7 +131,7 @@
 #define TUYA_NV_WRITE_GRAN             (4)
 
 /* start address */
-#define TUYA_NV_START_ADDR              0x5C000 
+#define TUYA_NV_START_ADDR              0x74000 
 
 /* area size. */
 #define TUYA_NV_AREA_SIZE              (4*TUYA_NV_ERASE_MIN_SIZE)

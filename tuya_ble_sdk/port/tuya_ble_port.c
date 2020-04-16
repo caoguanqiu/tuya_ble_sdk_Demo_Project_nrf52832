@@ -201,6 +201,19 @@ __TUYA_BLE_WEAK tuya_ble_status_t tuya_ble_timer_stop(void* timer_id)
 	return TUYA_BLE_SUCCESS;
 }
 
+
+/*
+ *@brief    
+ *@param    
+ *        
+ *@note     
+ *           
+ * */
+__TUYA_BLE_WEAK void tuya_ble_device_delay_ms(uint32_t ms)
+{
+    
+}
+
 /*
  *@brief    
  *@param    

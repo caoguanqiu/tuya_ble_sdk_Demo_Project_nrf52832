@@ -5,11 +5,11 @@
 #include <stdint.h>
 #include <stdbool.h>
 
+#include "ota.h"
 
+#define TUYA_FLASH_SETTING_BASE_ADDR   APP_NEW_FW_END_ADR
 
-#define TUYA_FLASH_SETTING_BASE_ADDR   0x5C000
-
-#define TUYA_FLASH_APP_DATA_END_ADDR     0x69FFF
+#define TUYA_FLASH_APP_DATA_END_ADDR     0x78000
 
 void  nrf_fstorage_port_init(void);
 

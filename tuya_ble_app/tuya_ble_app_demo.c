@@ -162,6 +162,9 @@ void tuya_ble_app_init(void)
     tuya_ble_callback_queue_register(tuya_cb_handler);
 
     tuya_ota_init();
+
+    TUYA_BLE_LOG_INFO("app version : "TY_APP_VER_STR);
+
 }
 
 

@@ -10,9 +10,9 @@
 #define TUYA_OTA_TYPE    0
 
 
-#define	    APP_NEW_FW_START_ADR	            (0x41000)
+#define	    APP_NEW_FW_START_ADR	            (0x4B000)
 
-#define	    APP_NEW_FW_END_ADR	                (0x5C000)
+#define	    APP_NEW_FW_END_ADR	                (0x70000)
 
 #define	    APP_NEW_FW_MAX_SIZE                (APP_NEW_FW_END_ADR - APP_NEW_FW_START_ADR)
 

@@ -908,7 +908,7 @@ int main(void)
     tuya_ble_app_init();
     advertising_start();
     
-    NRF_LOG_INFO("app version : %s\r\n",TY_APP_VER_STR);
+    
     
    // SEGGER_RTT_Write(0,test_rtt_data,8);
     

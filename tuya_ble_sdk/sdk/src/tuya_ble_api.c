@@ -1149,7 +1149,7 @@ tuya_ble_status_t tuya_ble_sdk_init(tuya_ble_device_param_t * param_data)
 
     tuya_ble_event_init();
 	
-	tuya_ble_gatt_send_queue_init();
+    tuya_ble_gatt_send_queue_init();
 
     tuya_ble_common_uart_init();
     

@@ -123,14 +123,14 @@ uint8_t * mp_dfu_settings_backup_buffer = &m_mbr_params_page[0];
 
 #elif defined ( __GNUC__ ) || defined ( __SES_ARM )
 
-    uint32_t const m_uicr_mbr_params_page_address
-        __attribute__ ((section(".uicr_mbr_params_page")))
-        __attribute__ ((used)) = NRF_MBR_PARAMS_PAGE_ADDRESS;
+//    uint32_t const m_uicr_mbr_params_page_address
+//        __attribute__ ((section(".uicr_mbr_params_page")))
+//        __attribute__ ((used)) = NRF_MBR_PARAMS_PAGE_ADDRESS;
 
 #elif defined ( __ICCARM__ )
 
-    __root uint32_t const m_uicr_mbr_params_page_address
-        @ NRF_UICR_MBR_PARAMS_PAGE_ADDRESS = NRF_MBR_PARAMS_PAGE_ADDRESS;
+//    __root uint32_t const m_uicr_mbr_params_page_address
+//        @ NRF_UICR_MBR_PARAMS_PAGE_ADDRESS = NRF_MBR_PARAMS_PAGE_ADDRESS;
 
 #else
 

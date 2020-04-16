@@ -38,7 +38,7 @@ ANON_UNIONS_DISABLE;
 
 ota_firmware_file_info_t *current_firmware_file_info;
 
-#define MAX_DFU_DATA_LEN  256
+#define MAX_DFU_DATA_LEN  512
 
 #define MAX_DFU_BUFFERS   ((CODE_PAGE_SIZE / MAX_DFU_DATA_LEN) + 1)
 
@@ -405,7 +405,7 @@ static void tuya_ota_data_req(uint8_t*recv_data,uint32_t recv_len)
 
                     if((current_package+1)%32==0)
                     {
-                        nrf_dfu_settings_write_and_backup(NULL); //由于flash异步存储，此处操作有风险，会出现setting数据和实际存储的固件数据不一致，可在偏移量请求中增加实际校验规避。
+                        nrf_dfu_settings_write_and_backup(NULL); //由于flash异步存储，此处操作有风险，会出现setting数据和实际存储的固件数据不一致，可在偏移量请求中增加实际校验规避�
                     }
 
 
@@ -433,7 +433,7 @@ static void tuya_ota_data_req(uint8_t*recv_data,uint32_t recv_len)
         TUYA_BLE_LOG_ERROR("tuya_ota_data_response failed.");
     }
 
-    if(state!=0)//出错，恢复初始状态
+    if(state!=0)//出错，恢复初始状�
     {
         TUYA_BLE_LOG_ERROR("ota error so free!");
         tuya_ota_status = TUYA_OTA_STATUS_NONE;

@@ -345,7 +345,7 @@ static const uint8_t scan_rsp_data_const[TUYA_BLE_SCAN_RSP_DATA_LEN] =
     0xFF,
     0xD0,
     0x07,
-    0x00, //bond flag bit7 （8）
+    0x0F, //bond flag bit7 （8）
     0x03, //protocol version
     0x01, //Encry Mode （10）
     0x00,0x00, //communication way bit0-mesh bit1-wifi bit2-zigbee bit3-NB
